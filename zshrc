@@ -27,17 +27,6 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "plugins/git",   from:oh-my-zsh
-zplug "plugins/extract",   from:oh-my-zsh
-zplug "plugins/git-open",   from:oh-my-zsh
-zplug "plugins/sudo",   from:oh-my-zsh
-zplug "plugins/cp",   from:oh-my-zsh
-zplug "plugins/web-search",   from:oh-my-zsh
-zplug "plugins/rand-quote", from:oh-my-zsh
-zplug "plugins/command-not-found",   from:oh-my-zsh
-zplug "plugins/colored-man-pages",   from:oh-my-zsh
-zplug "voronkovich/gitignore.plugin.zsh"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
