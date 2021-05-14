@@ -60,7 +60,7 @@ pip completion --zsh
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+ [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # kubectl
 source <(kubectl completion zsh)
@@ -69,3 +69,7 @@ source <(kubectl completion zsh)
 #eval "$(ssh-agent -s)"
 
 # pyenv
+# Load pyenv automatically by appending
+# the following to ~/.zshrc:
+
+eval "$(pyenv init -)"
