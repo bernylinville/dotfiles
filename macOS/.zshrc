@@ -54,9 +54,6 @@ eval "$(starship init zsh)"
 # gpg commit
 export GPG_TTY=$(tty)
 
-# pip completion
-pip completion --zsh
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -73,3 +70,8 @@ source <(kubectl completion zsh)
 # the following to ~/.zshrc:
 
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# pip completion
+eval "`pip completion --zsh`"
+compctl -K _pip_completion pip
